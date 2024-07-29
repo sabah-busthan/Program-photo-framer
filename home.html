@@ -11,18 +11,15 @@
     <div class="container">
         <h1>Program Framer</h1>
         <div class="upload-section">
-            <input type="file" id="image" accept="image/*">
-            <button type="button" id="upload-button" class="btn-primary">Upload & Crop</button>
+            <input type="file" id="images" accept="image/*" multiple>
+            <button type="button" id="upload-button" class="btn-primary">Upload</button>
         </div>
         <div id="image-preview" class="hidden">
             <img id="primary-img" alt="Primary Image">
         </div>
         <div class="action-buttons hidden">
             <button id="crop-image" class="btn-primary">Crop</button>
-            <button id="download-clear" class="btn-secondary">Download & Clear</button>
-        </div>
-        <div class="final-image-preview hidden">
-            <img id="final-preview" alt="Final Image">
+            <!-- <button id="download-clear" class="btn-secondary">Download All & Clear</button> -->
         </div>
     </div>
     <canvas id="canvas" class="hidden"></canvas>
